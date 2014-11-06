@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Тестовыое задание</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+
+<body>
+
+    <!-- Начало левой колоник -->
+    <div class="sidebar">
+        <div class="logo">
+            <img src="img/Logo.png" alt="Логотип компании">
+        </div>
+
+        <!-- Меню -->
+        <ul class="menu">
+            <li class="menu-item">Первая Ссылка</li>
+            <li class="menu-item active">Вторая Ссылка (активаня)</li>
+            <li class="menu-item">Третья Ссылка</li>
+            <li class="menu-item user-menu">Личный кабинет</li>
+            <li class="menu-item user-menu">Выход</li>
+        </ul>
+        <!-- Конец меню -->
+    </div>
+    <!-- Конец левой колонки -->
+
+    <!-- Блок с основной информацией -->
+    <div class="content">
+
+        <!-- Блок с заголовком -->
+        <div class="head">
+            <h1>Заголовок страницы</h1>
+            <p>В отличие от пылевого и ионного хвостов, направление поступает в лимногляциальный часовой угол</p>
+        </div>
+
+        <!-- Основкая информация -->
+        <div class="body">
+            <p class="header-info">Информация по оплате:</p>
+            <p class="payment-info">
+                <strong class="color-info">Номер счета:</strong><span>87123658716587</span>
+            </p>
+            <p class="payment-info mar-bot-35">
+                <strong class="color-info">Сумма платежа:</strong><span>100 руб.</span>
+            </p>
+            <h2 class="mar-bot-20">Данные банковской карты</h2>
+
+            <!-- Блок с картой -->
+            <div class="card-info">
+                <form id="card">
+                    <!-- Лицевая сторона -->
+                    <div class="card card-front">
+                        <p class="color-info mar-bot-5">Номер карты</p>
+                        <p class="mar-bot-15">
+                            <input type="text" class="card-number" id="card_field_1" name="card_field_1">
+                            <input type="text" id="card_field_2" name="card_field_2" class="test card-number">
+                            <input type="text" id="card_field_3" name="card_field_3" class="card-number">
+                            <input type="text" class="card-number" id="card_field_4" name="card_field_4">
+                        </p>
+
+                        <p class="color-info mar-bot-5">Срок действия</p>
+                        <div class="color-info mar-bot-10 select-field">
+                            <select>
+                                <option>01</option>
+                                <option>02</option>
+                                <option>03</option>
+                                <option>04</option>
+                                <option selected>05</option>
+                                <option>06</option>
+                                <option>07</option>
+                                <option>08</option>
+                                <option>09</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                            </select>
+
+                            <select>
+                                <option>2015</option>
+                                <option>2016</option>
+                                <option>2017</option>
+                                <option selected>2018</option>
+                                <option>2019</option>
+                            </select>
+                        </div>
+
+                        <p class="mar-bot-5">
+                            <input type="text" placeholder="Держатель карты" class="card-number full-width text-uppercase" id="author" name="author">
+                        </p>
+                    </div>
+                    <!-- Тыльная страница -->
+                    <div class="card card-back">
+                        <div class="line mar-bot-20"></div>
+                        <p class="color-info mar-bot-5 full-width right">Код CVV2 / CVC2</p>
+
+                        <div class="color-info mar-bot-5 right">
+                            <input type="text" class="card-number info" id="cvv" name="cvv">
+                        </div>
+
+
+                    </div>
+
+            </div>
+            <!-- Конец блока с картой -->
+            <div class="full-width">
+                <input type="submit" class="send" value="Оплатить">
+            </div>
+            </form>
+        </div>
+        <!-- Конец основной информации -->
+
+        <div class="footer">
+            <p>Исходя из астатической системы координат Булгакова, соединение стабильно. Краевая часть артезианского бассейна, которая в настоящее время находится ниже уровня моря, ослабляет систематический уход. Лисичка традиционно трансформирует прецессионный годовой параллакс.
+                <p>Выклинивание абсолютно аккумулирует твердый pадиотелескоп Максвелла.
+                </p>
+                <p>Алмаз слагает горст. Делювий длительно колеблет лазерный подвижный объект.
+                </p>
+                <p>Устойчивость, например, параллельна. Аргумент перигелия определяет боксит. Проекция вертикально дает уходящий диабаз. Если пренебречь малыми величинами, то видно, что угол крена покрывает вибрирующий волчок, что обусловлено не только первичными неровностями эрозионно-тектонического рельефа поверхности кристаллических пород, но и проявлениями долее поздней блоковой тектоники. Засветка неба заставляет иначе взглянуть на то, что такое волчок.
+                </p>
+        </div>
+
+    </div>
+    <!-- Конец основного блока -->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script>
+        $(document).ready(function () {
+        jQuery.validator.addMethod("domain", function(value, element) {
+  return this.optional(element) || ( !(/([^A-Za-z\s])/.test(value)) ); 
+}, "Please specify the correct domain for your documents");
+
+            
+            $('#card').validate({
+                rules: {
+                    card_field_1: {
+                        required: true,
+                        digits: true,
+                        maxlength: 4,
+                        minlength: 4
+
+                    },
+
+                    card_field_2: {
+                        required: true,
+                        digits: true,
+                        maxlength: 4,
+                        minlength: 4
+
+                    },
+
+
+                    card_field_3: {
+                        required: true,
+                        digits: true,
+                        maxlength: 4,
+                        minlength: 4
+
+                    },
+
+
+                    card_field_4: {
+                        required: true,
+                        digits: true,
+                        maxlength: 4,
+                        minlength: 4
+                    },
+
+
+                    author: {
+                        domain: true,
+                        required: true,
+                        minlength: 4
+                    },
+                
+                    cvv: {
+                        required: true,
+                        digits: true
+                    }
+
+
+                },
+                submitHandler: function () {
+                    alert("Submitted!")
+                }
+            });
+
+        });
+    </script>
+</body>
+
+</html>

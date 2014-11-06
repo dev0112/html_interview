@@ -1,0 +1,270 @@
+@font-face {
+    font-family: OpenSans; /* Имя шрифта */
+    src: url(fonts/OpenSans-Bold.ttf); /* Путь к файлу со шрифтом */
+}
+
+html {
+	background: #000;
+	padding-bottom: 20px;
+	padding-top: 80px;
+ }
+ 
+body {
+	font-family: arial;
+	margin: 0 auto;
+	width: 960px;
+ }
+ 
+.sidebar {
+	background-color: #1f2229;
+	border-right: 2px solid;
+	float: left;
+	width: 318px;
+ }
+
+.logo {height: 160px;}
+ 
+	.logo img {
+		height: 35px;
+		margin-left: 30px;
+		margin-top: 45px;
+		width: 175px;
+	 }
+
+.menu {width: 100%;}
+ 
+.menu-item {
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+    font-family: OpenSans;
+	padding: 30px;
+ }
+ 
+	.menu-item.active  {
+		background: #2a2d37;
+		color: #808592;
+	 }
+
+	.menu-item.user-menu {
+		background: #191c24;
+		border-top: 2px solid #1f2229;
+		color: #808592;
+	 }
+
+	.menu-item:hover  {
+		cursor: pointer;
+		background: #2a2d37;
+		color: #fff;
+		
+	 }
+
+.content {
+	float: left;
+	width: 640px;
+ }
+ 
+.head {
+	background-color: #00aeef;
+ 	height: 115px;
+	padding-left: 25px;
+	padding-top: 45px;
+ }
+ 
+	.head h1 {
+		color: #2a2d37;
+        font-family: OpenSans;
+        font-size: 35px;
+		font-weight: bold;
+		margin-bottom: 5px;
+	 }
+ 
+	.head p {
+		color: #2a2d37;
+		font-size: 14px;
+		line-height: 20px;
+		width: 430px;
+	 }
+
+.body {
+	background: #f7f8f8;
+	padding: 50px 30px;
+ }
+
+.footer {
+	background: #373c43;
+	box-sizing: border-box;
+	height: 263px;
+	padding: 25px 30px;
+ }
+
+.footer p {
+	color: #89909d;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 18px;
+	margin-bottom: 10px;
+ }
+ 
+.payment-info {margin-bottom: 10px;}
+ 
+	.payment-info strong {
+		float: left;
+		width: 150px;
+	 }
+ 
+.card-info {margin-bottom: 35px;}
+
+.card {
+	background-color: #f7f8f8;
+	border-radius: 10px;
+	border: 2px solid #e4e9ee;
+	box-sizing: border-box;
+	height: 236px;
+	width: 350px;
+ }
+ 
+.card-front {
+	padding: 25px 15px;
+	position: relative;
+	z-index: 5;
+ }
+ 
+.card-back {
+	float: right;
+	margin-top: -210px;
+	position: relative;
+	z-index: 0;
+ }
+ 
+	.card-back .right {
+		padding-right: 25px;
+		text-align: right;
+	 }
+
+.card-number {
+	border: 2px solid #e4e9ee;
+	box-sizing: border-box;
+	font-size: 16px;
+	height: 42px;
+	margin-right: 8px;
+	margin: 0px;
+	padding: 8px 12px;
+	text-align: center;
+	width: 65px;
+ }
+ 
+	.card-number:last-child {margin-right: 0px;}
+ 
+select {
+	background: #fff;
+	border: 2px solid #e4e9ee;
+	box-sizing: border-box;
+	font-size: 16px;
+	height: 42px;
+	padding: 8px 12px;
+ }
+ 
+.line {
+	background: #e4e9ee;
+	height: 40px;
+	margin-top: 25px;
+ }
+
+.send {
+	background-color: #95bf00;
+	background: #a1c600; /* Old browsers */ /* FF3.6+ */ /* IE10+ */ /* Opera 11.10+ */
+	background: -webkit-linear-gradient(top, #a1c600 0%, #8ab800 100%);
+	background: linear-gradient(to bottom, #a1c600 0%,#8ab800 100%); /* W3C */
+	border-radius: 3px;
+	border: none;
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 15px 50px;
+    font-family: OpenSans;
+ }
+ 
+	.send:hover {
+		background: #8ab800; /* Old browsers */ /* FF3.6+ */ /* IE10+ */ /* Opera 11.10+ */
+		background: -webkit-linear-gradient(top, #8ab800 0%, #a1c600 100%);
+		background: linear-gradient(to bottom, #8ab800 0%,#a1c600 100%); /* W3C */
+		cursor: pointer;
+			 }
+ 
+
+
+.info {
+	background: url(/img/info.png) no-repeat;
+	background-position: 95px;
+	background-color: #fff;
+	width: 130px;
+ }
+ 
+
+.full-width {
+	box-sizing: border-box;
+	text-align: left;
+	width: 100%;
+ }
+ 
+.mar-bot-5 {margin-bottom: 5px;}
+ 
+.mar-bot-10 {margin-bottom: 10px;}
+ 
+.mar-bot-15 {margin-bottom: 15px;}
+ 
+.mar-bot-20 {margin-bottom: 20px;}
+ 
+.mar-bot-35 {margin-bottom: 35px;}
+ 
+.header-info {
+	color: #8494ab;
+	float: left;
+	margin-bottom: 25px;
+	width: 100%;
+ }
+ 
+h2 {
+	color: #383d43;
+	font-size: 19px; 
+	font-weight: 700;
+	line-height: 22px;
+    font-family: OpenSans;
+ }
+
+.right {float: right;}
+ 
+
+.color-info {color: #8494ab;}
+ 
+srtrong {font-weight: 400;}
+ 
+span {color: #373c43}
+ 
+.error {border: 2px solid red}
+
+.select-field select {
+    background : url(../img/arrow.png) no-repeat right #fff;
+    background-position: 90%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    padding-right: 30px;
+   
+    
+}
+/* Для Internet Explorer: */
+.select-field select::-ms-expand {
+    display: none;
+} 
+/* Для Firefox: */ 
+select {
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+}
+
+label.error {display: none !important;}
