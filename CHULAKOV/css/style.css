@@ -32,6 +32,8 @@ body {
 	 }
 
 .menu {width: 100%;}
+
+.menu-mobile {display: none; }
  
 .menu-item {
 	color: #fff;

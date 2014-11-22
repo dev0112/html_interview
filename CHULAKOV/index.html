@@ -19,19 +19,28 @@
         </div>
 
         <a href="#" class="button-menu"></a>
-
-
         <!-- Меню -->
+        <!-- Для мобильно сайта -->
         <div class="full-width">
-            <ul class="menu">
+            <ul class="menu-mobile">
                 <li class="menu-item">Первая Ссылка</li>
                 <li class="menu-item active">Вторая Ссылка (активаня)</li>
                 <li class="menu-item">Третья Ссылка</li>
                 <li class="menu-item user-menu">Личный кабинет</li>
                 <li class="menu-item user-menu">Выход</li>
             </ul>
-            <!-- Конец меню -->
         </div>
+
+        <!-- Для обычного сайта -->
+        <ul class="menu">
+            <li class="menu-item">Первая Ссылка</li>
+            <li class="menu-item active">Вторая Ссылка (активаня)</li>
+            <li class="menu-item">Третья Ссылка</li>
+            <li class="menu-item user-menu">Личный кабинет</li>
+            <li class="menu-item user-menu">Выход</li>
+        </ul>
+        <!-- Конец меню -->
+
     </div>
     <!-- Конец левой колонки -->
 
@@ -131,76 +140,10 @@
 
     </div>
     <!-- Конец основного блока -->
-    <script src="js/jquery.js"></script>
+    <script src="js/jquery-1.11.1.js"></script>
     <script src="js/jquery.validate.js"></script>
-    <script>
-        $(document).ready(function () {
+    <script src="js/custom.js"></script>
 
-            $(".button-menu").click(function () {
-                $(".menu").toggle("slow");
-            });
-
-            jQuery.validator.addMethod("domain", function (value, element) {
-                return this.optional(element) || (!(/([^A-Za-z\s])/.test(value)));
-            }, "Please specify the correct domain for your documents");
-
-
-            $('#card').validate({
-                rules: {
-                    card_field_1: {
-                        required: true,
-                        digits: true,
-                        maxlength: 4,
-                        minlength: 4
-
-                    },
-
-                    card_field_2: {
-                        required: true,
-                        digits: true,
-                        maxlength: 4,
-                        minlength: 4
-
-                    },
-
-
-                    card_field_3: {
-                        required: true,
-                        digits: true,
-                        maxlength: 4,
-                        minlength: 4
-
-                    },
-
-
-                    card_field_4: {
-                        required: true,
-                        digits: true,
-                        maxlength: 4,
-                        minlength: 4
-                    },
-
-
-                    author: {
-                        domain: true,
-                        required: true,
-                        minlength: 4
-                    },
-
-                    cvv: {
-                        required: true,
-                        digits: true
-                    }
-
-
-                },
-                submitHandler: function () {
-                    alert("Submitted!")
-                }
-            });
-
-        });
-    </script>
 </body>
 
 </html>
