@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/font-awesome.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/jquery.bxslider.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.bxslider').bxSlider({
+                pager: false
+            });
+        });
+    </script>
+    <title>Time Form</title>
+</head>
+
+<body>
+    <header>
+        <div class='container sm'>
+            <section class="phone-info">
+                <p class="phone"><i class="fa fa-phone"></i> +7 985 500 40 20</p>
+                <p class="info">Контактная информация <i class='fa fa-sort-down'></i>
+                </p>
+            </section>
+
+            <section class="logo">
+                <h1>Time Form</h1>
+                <h4 class="description">Интернет-магазин оригинальных часов с оставкой по России</h4>
+            </section>
+
+            <section class="cart">
+                <div>
+                    <a href="#" class="sing-in">Вход в кабинет</a><a href="#" class="cart-icon">Корзина (0)</a> 
+                </div>
+                <input type="search" class='search'>
+            </section>
+        </div>
+    </header>
+    <div class='container'>
+        <div class='container sm'>
+            <nav>
+                <li><a href='#'>Мыжские часы</a>
+                </li>
+                <li><a href='#'>Женские часы</a>
+                </li>
+                <li><a href='#'>Детсике часы</a>
+                </li>
+                <li><a href='#'>Элитыне часы</a>
+                </li>
+                <li><a href='#'>Скидки</a>
+                </li>
+                <li><a href='#'>Новинки</a>
+                </li>
+            </nav>
+        </div>
+        <section class="nav-slider">
+            <div class='container sm'>
+                <ul>
+                    <li><a href="">1</a></li>
+                    <li><a href="">2</a></li>
+                    <li><a href="">3</a></li>
+                </ul>
+            </div>
+        </section>
+        <ul class="bxslider">
+            <li>
+                <img src="img/slide.png" title="Funky roots" />
+            </li>
+            <li>
+                <img src="img/slide2.png" title="The long and winding road" />
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
