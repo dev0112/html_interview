@@ -10,12 +10,21 @@
 
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/click-carousel.js"></script>
     <script>
         $(document).ready(function () {
             $('.bxslider').bxSlider({
                 pager: false
             });
         });
+		
+		$(function(){
+			$("#container").clickCarousel({margin: 30});	
+		});
+		
+		$(function(){
+			$("#containerSlider").clickCarousel({ margin: 30, left: jQuery("#carouselLeft-2"), right: jQuery("#carouselRight-2") });	
+		});
     </script>
     <title>Time Form</title>
 </head>
@@ -62,12 +71,13 @@
         <section class="nav-slider">
             <div class='container sm'>
                 <ul>
-                    <li><a href="">1</a></li>
-                    <li><a href="">2</a></li>
-                    <li><a href="">3</a></li>
+                    <li class="develery"><a href="">Бесплатная доставка</a></li>
+                    <li class="nagrada"><a href="">Гарантия на товар</a></li>
+                    <li class="time"><a href="">Отправка в день заказа</a></li>
                 </ul>
             </div>
         </section>
+		<section>
         <ul class="bxslider">
             <li>
                 <img src="img/slide.png" title="Funky roots" />
@@ -76,7 +86,136 @@
                 <img src="img/slide2.png" title="The long and winding road" />
             </li>
         </ul>
+		</section>
+		<section class="row">
+		<div class="h4"><h4>Подбор по бренду</h4></div>
+    <div class="slider">
+	<div id="container" class='sliders'>   	
+	<figure>
+		<img src="img/1.png" />
+		 <figcaption>
+			<p>Alberto Kovalli</p>
+			<p><a href="" class="black-button">Смотреть коллекцию</a></p>
+		</figcaption>
+	</figure>	
+	
+		<figure>
+		<img src="img/2.png" />
+		 <figcaption>
+			<p>Disel</p>
+			<p><a href="" class="black-button">Смотреть коллекцию</a></p>
+		 </figcaption>
+	</figure>
+	
+		<figure>
+		<img src="img/3.png" />
+		 <figcaption>
+			<p>Восток</p>
+			<p><a href="" class="black-button">Смотреть коллекцию</a></p>
+		</figcaption>
+	</figure>
     </div>
+	<img id="carouselLeft"  class="carouselLeft" src="img/arrow-left.png" alt="Left Arrow" />
+	<img id="carouselRight" class="carouselRight" src="img/arrow-right.png" alt="Right Arrow" />
+    </div>
+	
+		</section>
+		
+		<section class="row slider-2">
+		<div class="h4"><h4>Подбор по бренду</h4></div>
+    <div class="slider">
+	<div id="containerSlider" class='sliders'>   	
+	<figure>
+		<img src="img/view1.png" />
+	</figure>	
+	
+		<figure>
+		<img src="img/view2.png" />
+	</figure>	
+	
+		<figure>
+		<img src="img/view3.png" />
+	</figure>	
+	
+		<figure>
+		<img src="img/view4.png" />
+	</figure>	
+	
+    </div>
+	<img id="carouselLeft-2" class="carouselLeft" src="img/arrow-left.png" alt="Left Arrow" />
+	<img id="carouselRight-2" class="carouselRight" src="img/arrow-right.png" alt="Right Arrow" />
+    </div>
+	
+		</section>
+		<section>
+					<div class="h4">
+						<div class="soc">
+							<a href="#"><img src="img/vk.png" /></a>
+							<a href="#"><img src="img/fb.png" /></a>
+							<a href="#"><img src="img/ins.png" /></a>
+						</div>
+					</div>
+		</section>
+		
+		<section class="feedback">
+			<label>Подпишитесь на наши новости о скидках</label><input type="email" placeholder="ВАШ E-MAIL">
+		</section>
+		
+    </div>
+	<footer>
+	  <div class='container sm'>
+	<section>
+		<strong>полезно знать</strong>
+		<p> Сколько будем часы проверять</p>
+		<p>Там часы и механизмы</p>
+		<p>Ремонт пластиковых ремешков</p>
+		<p>Нарпротив бренды</p>
+		<p>Завтра так</p>
+	</section>
+	
+	<section>
+		<strong>полезно знать</strong>
+		<p> Сколько будем часы проверять</p>
+		<p>Там часы и механизмы</p>
+		<p>Ремонт пластиковых ремешков</p>
+		<p>Нарпротив бренды</p>
+		<p>Завтра так</p>
+	</section>
+
+	<section>
+		<strong>полезно знать</strong>
+		<p> Сколько будем часы проверять</p>
+		<p>Там часы и механизмы</p>
+		<p>Ремонт пластиковых ремешков</p>
+		<p>Нарпротив бренды</p>
+		<p>Завтра так</p>
+	</section>
+
+	<section>
+		<strong>полезно знать</strong>
+		<p> Сколько будем часы проверять</p>
+		<p>Там часы и механизмы</p>
+		<p>Ремонт пластиковых ремешков</p>
+		<p>Нарпротив бренды</p>
+		<p>Завтра так</p>
+	</section>
+	</div>
+	<div class="container">
+<div class="h4"><h4>Больше информации</h4></div>
+<div class="container sm links">
+	<section>
+	Разработка сайта
+	</section>
+	
+	<section>
+	</section>
+	
+	<section>
+	</section>
+<div>
+</div>
+
+	</footer>
 </body>
 
 </html>
